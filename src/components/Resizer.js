@@ -3,10 +3,11 @@ import withResize from '../HOCs/withResize';
 
 class Resizer extends Component {
   render() {
+    const { text, currentWidth } = this.props;
     return (
       <div>
-        {this.props.text}
-        <p>Current width: {this.props.currentWidth}</p>
+        {text}
+        <p>Current width: {currentWidth}</p>
       </div>
     );
   }

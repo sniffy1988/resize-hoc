@@ -11,6 +11,7 @@ export default function withResize(Comp) {
         currentWidth: window.innerWidth,
       });
     };
+
     componentDidMount() {
       window.addEventListener('resize', this.widthStater);
     }
